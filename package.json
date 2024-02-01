@@ -1,0 +1,12 @@
+{
+  "name": "devportfolio-r.deakins",
+  "version": "1.0.0",
+  "description": "A developer portfolio created with the React framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
