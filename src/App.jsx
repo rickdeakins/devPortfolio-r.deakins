@@ -16,8 +16,8 @@ function App() {
         <Outlet />
       </main>
       <div id="footer" className="py-4 fixed-bottom margin-right"><strong>© 2024 Rick Deakins</strong>
-      <img src="images/github.svg" alt="github_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /> 
-      <img src="images/linkedin.svg" alt="linkedin_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /> 
+      <a href="https://github.com"><img src="images/github.svg" alt="github_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /></a>
+      <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="linkedin_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /></a> 
       </div>
     </div>
   );
