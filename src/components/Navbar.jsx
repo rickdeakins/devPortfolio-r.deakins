@@ -6,7 +6,7 @@ function Nav() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs justify-content-center bg-secondary-color mt-20">
+    <ul className="nav nav-tabs justify-content-center mt-20">
       <li className="nav-item">
         <Link
           to="/About"

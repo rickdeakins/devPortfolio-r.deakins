@@ -18,7 +18,7 @@ function App() {
       <div id="footer" className="py-4 fixed-bottom margin-right"><strong>© 2024</strong>
       <img src="images/rickdeakinslogoicon.svg" alt="github_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} />
       <a href="https://github.com/rickdeakins/"><img src="images/github.svg" alt="github_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /></a>
-      <a href="https://www.linkedin.com/in/rick-deakins-14940315a?trk=people-guest_people_search-card"><img src="images/linkedin.svg" alt="linkedin_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /></a> 
+      <a href="https://www.linkedin.com/in/rick-deakins-14940315"><img src="images/linkedin.svg" alt="linkedin_logo" style={{ maxWidth: '2%', marginLeft: '10px' }} /></a> 
       </div>
     </div>
   );
