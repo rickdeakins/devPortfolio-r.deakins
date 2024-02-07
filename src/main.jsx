@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Importing Bootstrap into app
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '/Users/rickdeakins/bootcamp/Homework/devPortfolio-r.deakins/src/App.css'
+import '/src/App.css'
 
 // Importing the individual endpoints from 'pages' dirctor
 import App from './App';
