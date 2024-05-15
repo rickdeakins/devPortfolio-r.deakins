@@ -3,24 +3,85 @@
     margin-top: 10% auto;
     text-align: center;
   }
-
-  header {
-    background-color: #ffffff;
-  }
  
+  #header {
+    background-color: #ffffff;
+    position: fixed; /* Change from absolute to fixed */
+    top: 0; /* Position the header at the top */
+    left: 0;
+    right: 0; /* Stretch the header across the full width */
+    height: auto; /* Adjust the height as needed */
+    z-index: 1000; /* Ensure the header is on top of other elements */
+    margin-bottom: 10%;
+  }
+  
+  .headerstyle {
+    position: relative; /* Remove the fixed position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20%;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%; /* Adjust as needed */
+  }
+
+
   #footer {
     max-width: 100%;
     height: auto;
     border: 0;
     background-color: #ffffff;
   }
+
+  .about-text {
+    align-items: center;
+    max-width: 40%;
+    padding-bottom: 10%;
+  }
+
+  .about-text {
+    align-items: center;
+    max-width: 40%;
+    padding-bottom: 10%;
+  }  
+  .resume {
+    max-width: '80%'; 
+    border: '1px solid #343a40'; 
+    /* margin-bottom: '10%' */
+  }  
+  .imagetext {
+    max-width: 50%;
+    align-items: center;
+  }
+  
+  .image-container img:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-container img:last-child {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 0;
+    padding-bottom: 20%;
+  }
+  
   
   
   .logo {
-    height: 6em;
+    position: relative;
+    max-width: 30%;
+    /* height: 6em;
     padding: 1.5em;
     will-change: filter;
-    transition: filter 300ms;
+    transition: filter 300ms; */
   }
   .logo:hover {
     filter: drop-shadow(0 0 2em #646cffaa);
@@ -28,7 +89,8 @@
   .logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
-  
+
+
   @keyframes logo-spin {
     from {
       transform: rotate(0deg);
@@ -51,3 +113,147 @@
   /* .read-the-docs {
     color: #888;
   } */
+
+  .nav-link {
+    color: #000; /* Default font color for inactive tabs */
+    font-weight: bold;
+  } 
+  
+  .nav-link.active-tab {
+    color: #f00; /* Active tab text color */
+    background-color: #0183fcaa; /* Remove background color for active tab */
+    font-weight: bolder;
+  }
+  
+  .nav-link.inactive-tab {
+    color: #fff; /* Inactive tab text color */
+    font-weight: bold;
+  }
+
+  header {
+    position: absolute;
+    height: auto;
+  }
+ 
+  .headerstyle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Set a high value for the z-index property */
+    height: auto;
+    margin-bottom: 20%;
+
+  } 
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%; /* Adjust as needed */
+  }
+
+
+
+
+
+   /* Hover Effect*/
+   .iconeffect:hover {
+    filter: drop-shadow(0 0 2em #0183fcaa);
+    transition: transform 0.3s ease;
+    transform: translate(2px, 2px);
+  }
+  .icons.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    transition: transform 0.3s ease;
+  } 
+  
+  .imagetext:hover {
+    filter: drop-shadow(0 0 2em #6bafefaa);
+    transition: transform 0.3s ease;
+  }
+  .imagetext.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    transition: transform 0.3s ease;
+  } 
+
+  .about-text:hover {
+    filter: drop-shadow(0 0 2em #6bafefaa);
+    transition: transform 0.3s ease;
+  }
+  .about-text.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+    transition: transform 0.3s ease;
+  } 
+
+  /* .image-container {
+    position: relative;
+  }
+   */
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-text {
+    max-width: 60%;
+    padding-bottom: 8%;
+  }
+
+  .imagetext {
+    max-width: 70%;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+}
+
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header{
+    margin-top: 10%;
+    margin-bottom: 20%;
+  }
+
+  .about-text {
+    max-width: 60%;
+    padding-bottom: 8%;
+  }
+
+  .imagetext {
+    max-width: 70%;
+  }
+
+  .logo {
+    max-width: 40%;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  /* Your existing desktop styles */
+}
+
+.logo {
+  position: relative;
+  max-width: 30%;
+  min-width: 150px; /* Add this line */
+}
+
+@media (max-width: 767px) {
+  .logo {
+    max-width: 400px; /* Adjust this value to your desired mobile logo width */
+    min-width: auto; /* Reset min-width for mobile */
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .logo .mobile-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .nav-link {
+    min-width: 10%;
+}}

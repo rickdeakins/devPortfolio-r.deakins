@@ -1,9 +1,11 @@
 export default function Contact() {
     return (
       <div className="bg-light container-fluid" style={{ paddingTop: '170px' }}>
-        <img src="images/contact.svg" alt="greetings" width="50%" className="pb-3"/> 
-        <div className="container d-flex justify-content-start align-items-center pb-3">
-          <p className="col-lg-5 text-center mx-auto bg-light">
+        <img src="images/contact.svg" alt="greetings" width="50%" className="imagetext"/> 
+        <div className="imagetext align">
+        <img src="images/contacttext.svg" alt="greetings" width="50%" className="imagetext" style={{marginLeft: '80%',marginBottom: '20%'}}/> 
+
+          {/* <p className="col-lg-5 text-center mx-auto bg-light">
           <h3><strong>Contact Me With Any Inquiries</strong></h3>
           <form style={{ marginBottom: '20%' }}>
           <div class="mb-3">
@@ -20,7 +22,7 @@ export default function Contact() {
               </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-        </p><br/>
+        </p><br/> */}
         </div></div>
     );
   }

@@ -2,10 +2,10 @@
       return (
         <div className="bg-light container-fluid align-items-center text-center" style={{ paddingTop: '170px' }}>
           {/* Heading image */}
-        <img src="images/portfolio.svg" alt="greetings" width="50%" className="pb-3"/> 
+        <img src="images/portfolio.svg" alt="greetings" width="50%" className="imagetext"/> 
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column justify-content-center align-items-center mb-5">
+            <div className="d-flex flex-column justify-content-center align-items-center mb-5 iconeffect">
                 {/* Content for the first flex box */}
                 <a href="https://rickdeakins.github.io/PasswordGeneratorgit"><img src="images/passwordgenerator.png" alt="Image 1" className="img-fluid mb-2" /></a>
                 <p><strong>Password Generator Application</strong><br/>
@@ -16,7 +16,7 @@
             </div>
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column align-items-center mb-5">
+            <div className="d-flex flex-column align-items-center mb-5 iconeffect">
                 {/* Content for the second flex box */}
                 <img src="images/regex.png" alt="Image 2" className="img-fluid mb-2" />
                 <p><strong>Regex (Regular Expressions) Documentation</strong><br/>
@@ -28,7 +28,7 @@
             </div>
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center iconeffect">
                 {/* Content for the third flex box */}
                 <img src="images/express_sequelize.png" alt="orm" className="img-fluid mb-2" />
                 <p><strong>E-Commerce Backed ORM</strong></p>
@@ -40,7 +40,7 @@
             </div> 
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center iconeffect">
                 {/* Content for the fourth flex box */}
                 <a href="https://rickdeakins.github.io/workScheduler/"><img src="images/workscheduler.png" alt="Image 2" className="img-fluid mb-2" /></a>
                 <p><strong>Work Scheduler Interactive Scheduling Application</strong><br/>
@@ -55,7 +55,7 @@
             </div>
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column align-items-center">
+            <div className="d-flex flex-column align-items-center iconeffect">
                 {/* Content for the fifth flex box */}
                 <a href="https://expressnotesv1-b059a69fb631.herokuapp.com"><img src="/images/NoteTaker.png" alt="Image 2" className="img-fluid mb-2" /></a>
                 <p><strong>Express Notes Note-Taking Application</strong><br/>
@@ -67,7 +67,7 @@
             </div>
         <div className="row">
           <div className="w-50 mx-auto">
-            <div className="d-flex flex-column align-items-cente" style={{marginBottom: "15%"}}>
+            <div className="d-flex flex-column align-items-center iconeffect" style={{marginBottom: "15%"}}>
                 {/* Content for the sixth flex box */}
                 <a href="https://anotherwebtexteditor-8964003501f4.herokuapp.com"><img src="/images/Text Editor.png" alt="Image 2" className="img-fluid mb-2" /></a>
                 <p><strong>textEditorPWA</strong><br/>
