@@ -84,7 +84,7 @@ function Nav() {
           Portfolio
         </Link>
       </li>
-      <li className="iconeffect">
+      {/* <li className="iconeffect">
         <Link
           to="/Contact"
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -92,7 +92,7 @@ function Nav() {
         >
           Contact
         </Link>
-      </li>
+      </li> */}
     </ul>
   );
 }

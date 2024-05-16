@@ -10,7 +10,7 @@ import '/src/App.css'
 import App from './App';
 import Error from './pages/Error';
 import Resume from './pages/Resume';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 
@@ -41,10 +41,10 @@ const router = createBrowserRouter([
         path: '/Portfolio',
         element: <Portfolio />,
       },
-      {
-        path: '/Contact',
-        element: <Contact />,
-      },
+      // {
+      //   path: '/Contact',
+      //   element: <Contact />,
+      // },
     ],
   },
 ]);

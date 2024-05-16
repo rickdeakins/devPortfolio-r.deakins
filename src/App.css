@@ -1,6 +1,20 @@
+html, body {
+  height: 100vh; /* Set height to 100% of viewport height */
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  min-height: calc(100vh - 10%); /* Subtract the header height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #root {
     max-width: 100%;
-    margin-top: 10% auto;
+    /* margin-top: 10% auto; */
     text-align: center;
   }
  
@@ -12,7 +26,7 @@
     right: 0; /* Stretch the header across the full width */
     height: auto; /* Adjust the height as needed */
     z-index: 1000; /* Ensure the header is on top of other elements */
-    margin-bottom: 10%;
+    margin-bottom: 0;
   }
   
   .headerstyle {
@@ -21,7 +35,7 @@
     left: 0;
     width: 100%;
     height: auto;
-    margin-bottom: 20%;
+    margin-bottom: 0;
   }
   
   .header-container {
@@ -32,13 +46,27 @@
   }
 
 
-  #footer {
+  /* #footer {
     max-width: 100%;
     height: auto;
     border: 0;
     background-color: #ffffff;
-  }
+  } */
 
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px; /* Adjust the height as needed */
+  background-color: #ffffff; /* Set the background color to white */
+  color: #000000; /* Set the text color to black */
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  padding: 10px; /* Add some padding if needed */
+}
   .about-text {
     align-items: center;
     max-width: 40%;
@@ -76,7 +104,7 @@
   
   
   .logo {
-    position: relative;
+    position: absolute;
     max-width: 30%;
     /* height: 6em;
     padding: 1.5em;
@@ -193,8 +221,8 @@
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 991px) {
   .about-text {
-    max-width: 60%;
-    padding-bottom: 8%;
+    max-width: 80%;
+    padding-bottom: 20%;
   }
 
   .imagetext {
@@ -215,8 +243,8 @@
   }
 
   .about-text {
-    max-width: 60%;
-    padding-bottom: 8%;
+    max-width: 80%;
+    /* padding-bottom: 8%; */
   }
 
   .imagetext {
@@ -236,7 +264,7 @@
 .logo {
   position: relative;
   max-width: 30%;
-  min-width: 150px; /* Add this line */
+  min-width: 20%; /* Add this line */
 }
 
 @media (max-width: 767px) {
@@ -254,6 +282,7 @@
     width: 100%;
     height: auto;
   }
-  .nav-link {
-    min-width: 10%;
-}}
+  /* .nav-link {
+    min-width: 50%;
+}} */
+
