@@ -46,12 +46,11 @@ html, body {
   }
 
 
-  /* #footer {
+   #footer {
     max-width: 100%;
-    height: auto;
     border: 0;
     background-color: #ffffff;
-  } */
+  } 
 
 
 .footer {
@@ -59,7 +58,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 70px; /* Adjust the height as needed */
+  height: 10%; /* Adjust the height as needed */
   background-color: #ffffff; /* Set the background color to white */
   color: #000000; /* Set the text color to black */
   display: flex; /* Add this line */
@@ -70,7 +69,6 @@ html, body {
   .about-text {
     align-items: center;
     max-width: 40%;
-    padding-bottom: 10%;
   }
 
   .about-text {
@@ -222,7 +220,7 @@ html, body {
 @media (min-width: 768px) and (max-width: 991px) {
   .about-text {
     max-width: 80%;
-    padding-bottom: 20%;
+    padding-bottom: 1X0%;
   }
 
   .imagetext {
