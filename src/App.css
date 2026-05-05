@@ -1,5 +1,6 @@
 html, body {
   height: 100vh; /* Set height to 100% of viewport height */
+  width: auto;
   margin: 0;
   padding: 0;
 }
@@ -103,7 +104,7 @@ html, body {
   
   .logo {
     position: absolute;
-    max-width: 30%;
+    max-width: 40%;
     /* height: 6em;
     padding: 1.5em;
     will-change: filter;
