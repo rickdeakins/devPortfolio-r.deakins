@@ -1,5 +1,7 @@
+
+
 html, body {
-  height: 100vh; /* Set height to 100% of viewport height */
+  height: min-height; /* Set height to 100% of viewport height */
   width: auto;
   margin: 0;
   padding: 0;
@@ -18,11 +20,13 @@ html, body {
     /* margin-top: 10% auto; */
     text-align: center;
   }
- 
+
+  
+
   #header {
     background-color: #ffffff;
     position: fixed; /* Change from absolute to fixed */
-    top: 0; /* Position the header at the top */
+    top: 20%; /* Position the header at the top */
     left: 0;
     right: 0; /* Stretch the header across the full width */
     height: auto; /* Adjust the height as needed */
@@ -30,14 +34,39 @@ html, body {
     margin-bottom: 0;
   }
   
-  .headerstyle {
-    position: relative; /* Remove the fixed position */
-    top: 0;
-    left: 0;
+  .about-root { box-sizing: border-box; max-width:100%; }
+
+  .main-body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 1rem;
+    width:100%;
+    padding-left:1rem;
+    padding-right:1rem;
+  }
+  
+  .imagetext {
+    max-width: 720px;
     width: 100%;
     height: auto;
-    margin-bottom: 0;
   }
+  
+  .imagetext img, .image-container img {
+    width:100%;
+    height:auto;
+    display:block;
+    max-width:100%;
+  }
+  
+  .image-container { width:100%; position:relative; }
+  
+  @media (max-width:767px) {
+    .main-body { padding-left: .75rem; padding-right: .75rem; }
+    .imagetext { max-width: 92%; }
+  }
+  
+  
   
   .header-container {
     display: flex;
