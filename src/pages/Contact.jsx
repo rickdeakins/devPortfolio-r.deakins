@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
       <div className="bg-light container-fluid" style={{ paddingTop: '170px' }}>
-        <img src="images/contact.svg" alt="greetings" width="50%" className="imagetext"/> 
+        <img src="images/contact.svg" alt="greetings" width="75%" className="imagetext"/> 
         <div className="imagetext align">
         <img src="images/contacttext26.svg" alt="greetings" width="80%" className="imagetext" style={{marginLeft: '25%',marginBottom: '20%'}}/> 
 
