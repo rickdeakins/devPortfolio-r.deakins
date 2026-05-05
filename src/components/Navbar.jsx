@@ -68,6 +68,29 @@ function Nav() {
       </li>
       <li className="iconeffect">
         <Link
+          to="/Contact"
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </Link>
+      </li>
+      </ul>
+      )
+
+
+  return (
+    <ul className="nav nav-tabs justify-content-center mt-20">
+      <li className="iconeffect">
+        <Link
+          to="/About"
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
+          About
+        </Link>
+      </li>
+      <li className="iconeffect">
+        <Link
           to="/Resume"
           // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
